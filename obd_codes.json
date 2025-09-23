@@ -1,0 +1,603 @@
+[
+  {
+    "code": "P0000",
+    "description": "No trouble code",
+    "causes": ["No fault detected"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0001",
+    "description": "Fuel Volume Regulator Control Circuit / Open",
+    "causes": ["Faulty fuel volume regulator", "Wiring issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0002",
+    "description": "Fuel Volume Regulator Control Circuit Range/Performance",
+    "causes": ["Fuel regulator malfunction", "Low fuel pressure", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0003",
+    "description": "Fuel Volume Regulator Control Circuit Low",
+    "causes": ["Short to ground", "Faulty regulator", "Wiring issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0004",
+    "description": "Fuel Volume Regulator Control Circuit High",
+    "causes": ["Short to power", "Faulty regulator", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0005",
+    "description": "Fuel Shutoff Valve Control Circuit / Open",
+    "causes": ["Faulty shutoff valve", "Wiring harness issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0006",
+    "description": "Fuel Shutoff Valve Control Circuit Low",
+    "causes": ["Short to ground", "Valve failure", "Wiring issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0007",
+    "description": "Fuel Shutoff Valve Control Circuit High",
+    "causes": ["Short to power", "Valve failure", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0008",
+    "description": "Engine Position System Performance - Bank 2",
+    "causes": ["Timing chain/belt issue", "Camshaft/crankshaft sensor fault", "ECU fault"],
+    "severity": "High"
+  },
+  {
+    "code": "P0009",
+    "description": "Engine Position System Performance - Bank 2",
+    "causes": ["Timing alignment problem", "Sensor fault", "Mechanical timing issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0010",
+    "description": "Intake Camshaft Position Actuator Circuit / Open (Bank 2)",
+    "causes": ["Faulty actuator", "Wiring issue", "ECU problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0011",
+    "description": "Intake Camshaft Position Timing - Over-Advanced (Bank 2)",
+    "causes": ["Stuck actuator", "Timing chain issue", "Low oil pressure"],
+    "severity": "High"
+  },
+  {
+    "code": "P0012",
+    "description": "Intake Camshaft Position Timing - Over-Retarded (Bank 2)",
+    "causes": ["Stuck actuator", "Low oil pressure", "Timing chain issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0013",
+    "description": "Exhaust Camshaft Position Actuator Circuit / Open (Bank 2)",
+    "causes": ["Faulty actuator", "Open wiring circuit", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0014",
+    "description": "Exhaust Camshaft Position Timing - Over-Advanced (Bank 2)",
+    "causes": ["Faulty actuator", "Incorrect timing", "Oil pressure issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0015",
+    "description": "Exhaust Camshaft Position Timing - Over-Retarded (Bank 2)",
+    "causes": ["Stuck actuator", "Timing belt/chain issue", "Oil pressure issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0016",
+    "description": "Crankshaft Position Camshaft Position Correlation Bank 2 Sensor A",
+    "causes": ["Timing misalignment", "Faulty crankshaft sensor", "Camshaft sensor issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0017",
+    "description": "Crankshaft Position Camshaft Position Correlation Bank 2 Sensor B",
+    "causes": ["Timing chain/belt problem", "Faulty sensor", "ECU fault"],
+    "severity": "High"
+  },
+  {
+    "code": "P0018",
+    "description": "Crankshaft Position Camshaft Position Correlation Bank 2 Sensor A",
+    "causes": ["Incorrect timing", "Sensor malfunction", "Mechanical issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0019",
+    "description": "Crankshaft Position Camshaft Position Correlation Bank 2 Sensor B",
+    "causes": ["Timing misalignment", "Crankshaft sensor fault", "Camshaft sensor issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0020",
+    "description": "Intake Camshaft Position Actuator Circuit / Open (Bank 2)",
+    "causes": ["Faulty actuator", "Wiring harness open", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0021",
+    "description": "Intake Camshaft Position Timing - Over-Advanced (Bank 2)",
+    "causes": ["Stuck actuator", "Timing chain misalignment", "Oil pressure issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0022",
+    "description": "Intake Camshaft Position Timing - Over-Retarded (Bank 2)",
+    "causes": ["Stuck actuator", "Low oil pressure", "Timing chain issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0023",
+    "description": "Exhaust Camshaft Position Actuator Circuit / Open (Bank 2)",
+    "causes": ["Faulty actuator", "Open wiring", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0024",
+    "description": "Exhaust Camshaft Position Timing - Over-Advanced (Bank 2)",
+    "causes": ["Faulty actuator", "Timing error", "Oil control issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0025",
+    "description": "Exhaust Camshaft Position Timing - Over-Retarded (Bank 2)",
+    "causes": ["Stuck actuator", "Timing chain issue", "Low oil pressure"],
+    "severity": "High"
+  },
+  {
+    "code": "P0026",
+    "description": "Intake Valve Control Solenoid Circuit Range/Performance (Bank 2)",
+    "causes": ["Faulty solenoid", "Wiring issue", "Low oil pressure"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0027",
+    "description": "Exhaust Valve Control Solenoid Circuit Range/Performance (Bank 2)",
+    "causes": ["Faulty solenoid", "Wiring problem", "Oil pressure issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0028",
+    "description": "Intake Valve Control Solenoid Circuit Range/Performance (Bank 2)",
+    "causes": ["Faulty solenoid", "Low oil pressure", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0029",
+    "description": "Exhaust Valve Control Solenoid Circuit Range/Performance (Bank 2)",
+    "causes": ["Faulty solenoid", "Oil control problem", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0030",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Control Circuit Bank 2 Sensor 1",
+    "causes": ["Oxygen sensor fault", "Heater circuit open", "Wiring issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0031",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit Low Voltage Bank 2 Sensor 1",
+    "causes": ["Faulty sensor heater", "Short to ground", "Wiring issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0032",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit High Voltage Bank 2 Sensor 1",
+    "causes": ["Short to power", "Faulty heater circuit", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0033",
+    "description": "Turbo/Super Charger Bypass Valve Control Circuit / Open",
+    "causes": ["Faulty bypass valve", "Open circuit", "Wiring harness issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0034",
+    "description": "Turbo/Super Charger Bypass Valve Control Circuit Low",
+    "causes": ["Short to ground", "Faulty solenoid", "Wiring issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0035",
+    "description": "Turbo/Super Charger Bypass Valve Control Circuit High",
+    "causes": ["Short to power", "Faulty valve", "ECU problem"],
+    "severity": "High"
+  },
+  {
+    "code": "P0036",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Control Circuit Bank 2 Sensor 2",
+    "causes": ["Faulty oxygen sensor", "Open heater circuit", "Wiring problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0037",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit Low Voltage Bank 2 Sensor 2",
+    "causes": ["Short to ground", "Heater failure", "Wiring harness fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0038",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit High Voltage Bank 2 Sensor 2",
+    "causes": ["Short to power", "Faulty heater element", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0039",
+    "description": "Turbo/Super Charger Bypass Valve Control Circuit Range/Performance",
+    "causes": ["Faulty bypass valve", "Sticking actuator", "Boost control problem"],
+    "severity": "High"
+  },
+  {
+    "code": "P0040",
+    "description": "Oxygen Sensor Signals Swapped Bank 2 Sensor 1 / Bank 2 Sensor 1",
+    "causes": ["Wiring swapped", "Sensor installation error", "ECU misconfiguration"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0041",
+    "description": "Oxygen Sensor Signals Swapped Bank 2 Sensor 2 / Bank 2 Sensor 2",
+    "causes": ["Incorrect wiring", "Sensor connection error", "ECU misread"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0042",
+    "description": "HO2S Heater Control Circuit (Bank 2, Sensor 3)",
+    "causes": ["Oxygen sensor heater fault", "Wiring issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0043",
+    "description": "HO2S Heater Control Circuit Low (Bank 2, Sensor 3)",
+    "causes": ["Short to ground", "Heater fault", "Wiring issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0044",
+    "description": "HO2S Heater Control Circuit High (Bank 2, Sensor 3)",
+    "causes": ["Short to power", "Heater element fault", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0046",
+    "description": "Turbo/Super Charger Boost Control Solenoid Circuit / Open",
+    "causes": ["Faulty solenoid", "Open wiring", "ECU issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0046",
+    "description": "Turbo/Super Charger Boost Control Solenoid Circuit Range/Performance",
+    "causes": ["Sticking solenoid", "Wiring harness fault", "Boost control issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0047",
+    "description": "Turbo/Super Charger Boost Control Solenoid Circuit Low",
+    "causes": ["Short to ground", "Faulty solenoid", "ECU issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0048",
+    "description": "Turbo/Super Charger Boost Control Solenoid Circuit High",
+    "causes": ["Short to power", "Faulty solenoid", "Wiring problem"],
+    "severity": "High"
+  },
+  {
+    "code": "P0049",
+    "description": "Turbo/Super Charger Turbine Overspeed",
+    "causes": ["Excessive boost pressure", "Faulty turbo wastegate", "ECU miscalculation"],
+    "severity": "High"
+  },
+  {
+    "code": "P0050",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit Bank 2 Sensor 1",
+    "causes": ["Oxygen sensor heater fault", "Wiring harness issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0051",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit Low Voltage Bank 2 Sensor 1",
+    "causes": ["Short to ground", "Sensor heater failure", "Wiring fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0052",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit High Voltage Bank 2 Sensor 1",
+    "causes": ["Short to power", "Heater element failure", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0053",
+    "description": "HO2S Heater Resistance Bank 2 Sensor 1 (PCM)",
+    "causes": ["High resistance in heater", "Wiring issue", "PCM fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0054",
+    "description": "HO2S Heater Resistance Bank 2 Sensor 2 (PCM)",
+    "causes": ["Excessive resistance", "Heater fault", "Wiring harness problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0055",
+    "description": "HO2S Heater Resistance Bank 2 Sensor 3 (PCM)",
+    "causes": ["Heater element failure", "Wiring fault", "PCM issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0056",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit Bank 2 Sensor 2",
+    "causes": ["Sensor heater open", "Wiring issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0057",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit Low Voltage Bank 2 Sensor 2",
+    "causes": ["Short to ground", "Heater element fault", "Wiring issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0058",
+    "description": "Heated Oxygen Sensor (HO2S) Heater Circuit High Voltage Bank 2 Sensor 2",
+    "causes": ["Short to power", "Faulty heater circuit", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0059",
+    "description": "HO2S Heater Resistance (Bank 2, Sensor 1)",
+    "causes": ["High resistance", "Wiring problem", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0060",
+    "description": "HO2S Heater Resistance (Bank 2, Sensor 2)",
+    "causes": ["Faulty sensor heater", "Wiring harness fault", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0061",
+    "description": "HO2S Heater Resistance (Bank 2, Sensor 3)",
+    "causes": ["Heater circuit failure", "Wiring issue", "PCM problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0062",
+    "description": "HO2S Heater Control Circuit (Bank 2, Sensor 3)",
+    "causes": ["Open circuit", "Faulty heater", "Wiring harness fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0063",
+    "description": "HO2S Heater Control Circuit Low (Bank 2, Sensor 3)",
+    "causes": ["Short to ground", "Faulty sensor heater", "Wiring fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0064",
+    "description": "HO2S Heater Control Circuit High (Bank 2, Sensor 3)",
+    "causes": ["Short to power", "Heater element issue", "ECU problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0065",
+    "description": "Air Assisted Injector Control Range/Performance",
+    "causes": ["Faulty injector", "Air assist valve issue", "Wiring problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0066",
+    "description": "Air Assisted Injector Control Circuit or Circuit Low",
+    "causes": ["Short to ground", "Injector circuit issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0067",
+    "description": "Air Assisted Injector Control Circuit or Circuit High",
+    "causes": ["Short to power", "Faulty circuit", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0068",
+    "description": "MAP / MAF - Throttle Position Correlation",
+    "causes": ["Faulty MAP sensor", "Faulty MAF sensor", "Throttle position sensor issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0069",
+    "description": "MAP - Barometric Pressure Correlation",
+    "causes": ["Faulty MAP sensor", "Barometric pressure sensor issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0070",
+    "description": "Ambient Air Temperature Sensor Circuit",
+    "causes": ["Faulty AAT sensor", "Wiring issue", "ECU problem"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0071",
+    "description": "Ambient Air Temperature Sensor Range/Performance",
+    "causes": ["Sensor fault", "Poor connection", "ECU issue"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0072",
+    "description": "Ambient Air Temperature Sensor Circuit Low Input",
+    "causes": ["Short to ground", "Faulty sensor", "Wiring problem"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0073",
+    "description": "Ambient Air Temperature Sensor Circuit High Input",
+    "causes": ["Short to power", "Faulty sensor", "ECU issue"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0074",
+    "description": "Ambient Air Temperature Sensor Circuit Intermittent/Erratic",
+    "causes": ["Loose connection", "Sensor fault", "Wiring harness issue"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0075",
+    "description": "Intake Valve Control Circuit (Bank 2)",
+    "causes": ["Faulty solenoid", "Wiring issue", "ECU problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0076",
+    "description": "Intake Valve Control Circuit Low (Bank 2)",
+    "causes": ["Short to ground", "Faulty actuator", "Wiring fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0077",
+    "description": "Intake Valve Control Circuit High (Bank 2)",
+    "causes": ["Short to power", "Faulty solenoid", "ECU issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0078",
+    "description": "Exhaust Valve Control Circuit (Bank 2)",
+    "causes": ["Faulty actuator", "Wiring issue", "ECU problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0079",
+    "description": "Exhaust Valve Control Circuit Low (Bank 2)",
+    "causes": ["Short to ground", "Faulty solenoid", "Wiring fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0080",
+    "description": "Exhaust Valve Control Circuit High (Bank 2)",
+    "causes": ["Short to power", "Faulty solenoid", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0081",
+    "description": "Intake Valve Control Circuit (Bank 2)",
+    "causes": ["Faulty solenoid", "Wiring harness fault", "ECU problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0082",
+    "description": "Intake Valve Control Circuit Low (Bank 2)",
+    "causes": ["Short to ground", "Faulty actuator", "Wiring harness issue"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0083",
+    "description": "Intake Valve Control Circuit High (Bank 2)",
+    "causes": ["Short to power", "Faulty actuator", "ECU problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0084",
+    "description": "Exhaust Valve Control Circuit (Bank 2)",
+    "causes": ["Faulty solenoid", "Wiring issue", "ECU fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0085",
+    "description": "Exhaust Valve Control Circuit Low (Bank 2)",
+    "causes": ["Short to ground", "Faulty actuator", "Wiring harness fault"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0086",
+    "description": "Exhaust Valve Control Circuit High (Bank 2)",
+    "causes": ["Short to power", "Faulty actuator", "ECU problem"],
+    "severity": "Medium"
+  },
+  {
+    "code": "P0087",
+    "description": "Fuel Rail/System Pressure - Too Low",
+    "causes": ["Weak fuel pump", "Clogged fuel filter", "Leaking injector"],
+    "severity": "High"
+  },
+  {
+    "code": "P0088",
+    "description": "Fuel Rail/System Pressure - Too High",
+    "causes": ["Faulty fuel pressure regulator", "Clogged return line", "ECU issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0089",
+    "description": "Fuel Pressure Regulator Performance",
+    "causes": ["Faulty regulator", "Fuel pump issue", "Wiring fault"],
+    "severity": "High"
+  },
+  {
+    "code": "P0090",
+    "description": "Fuel Pressure Regulator Control Circuit / Open",
+    "causes": ["Open wiring", "Faulty regulator solenoid", "ECU issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0091",
+    "description": "Fuel Pressure Regulator Control Circuit Low",
+    "causes": ["Short to ground", "Faulty regulator solenoid", "ECU fault"],
+    "severity": "High"
+  },
+  {
+    "code": "P0092",
+    "description": "Fuel Pressure Regulator Control Circuit High",
+    "causes": ["Short to power", "Faulty regulator solenoid", "ECU issue"],
+    "severity": "High"
+  },
+  {
+    "code": "P0093",
+    "description": "Fuel System Leak Detected - Large Leak",
+    "causes": ["Leaking fuel line", "Faulty injector seal", "Loose connection"],
+    "severity": "High"
+  },
+  {
+    "code": "P0094",
+    "description": "Fuel System Leak Detected - Small Leak",
+    "causes": ["Small injector leak", "Fuel line crack", "Loose clamp"],
+    "severity": "High"
+  },
+  {
+    "code": "P0095",
+    "description": "Intake Air Temperature Sensor 2 Circuit",
+    "causes": ["Faulty IAT sensor", "Wiring harness issue", "ECU problem"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0096",
+    "description": "Intake Air Temperature Sensor 2 Circuit Range/Performance",
+    "causes": ["Faulty IAT sensor", "Connection issue", "ECU fault"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0097",
+    "description": "Intake Air Temperature Sensor 2 Circuit Low",
+    "causes": ["Short to ground", "Faulty IAT sensor", "Wiring harness fault"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0098",
+    "description": "Intake Air Temperature Sensor 2 Circuit High",
+    "causes": ["Short to power", "Faulty IAT sensor", "ECU issue"],
+    "severity": "Low"
+  },
+  {
+    "code": "P0099",
+    "description": "Intake Air Temperature Sensor 2 Circuit Intermittent/Erratic",
+    "causes": ["Loose connection", "Faulty sensor", "Wiring harness issue"],
+    "severity": "Low"
+  }
+]
+
