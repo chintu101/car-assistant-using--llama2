@@ -1,5 +1,6 @@
 import json
 import ollama
+from numpy.f2py.rules import options
 
 # Load the JSON knowledge base
 with open(r"D:\DevTools\Projects\LLMS\obd_codes.json", "r") as f:
