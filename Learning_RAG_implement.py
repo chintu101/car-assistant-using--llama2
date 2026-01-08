@@ -38,31 +38,32 @@ def retrieve(query, top_n=3): #the top_n = 3 is to send the top 3 similar vector
     return similarities[:top_n] #returns the top n similarities, right now n is set to 3
 
 
-input_query = input("enter your question: ")
-retrieved_knowledge = retrieve(input_query)
-print('Retrieved knowledge:')
+while True:
+    input_query = input("\nenter your question: ")
+    retrieved_knowledge = retrieve(input_query)
+    #print('Retrieved knowledge:')
 
-for chunk, similarity in retrieved_knowledge:
-  print(f' - (similarity: {similarity:.2f}) {chunk}') #returns the similarities between the input and chunk vector upto two decimal places
-
-instruction_prompt = f''' you are a helpful chatbot
-Use only the following pieces of context to answer the question. Dont make up any new information:
-{'/n'.join([f'{chunk}' for chunk, similarity in retrieved_knowledge])} 
+    '''for chunk, similarity in retrieved_knowledge:
+      print(f' - (similarity: {similarity:.2f}) {chunk}') #returns the similarities between the input and chunk vector upto two decimal places
 '''
+    instruction_prompt = f''' you are a helpful chatbot
+    Use only the following pieces of context to answer the question. Dont make up any new information:
+    {'/n'.join([f'{chunk}' for chunk, similarity in retrieved_knowledge])} 
+    '''
 
-#using ollama to generate the prompt
-stream = ollama.chat(
-    model = LANGUAGE_MODEL,
-    messages=[
-        {'role': 'system', 'content': instruction_prompt},
-        {'role': 'user', 'content': input_query}
-    ],
-    stream=True
-)
+    #using ollama to generate the prompt
+    stream = ollama.chat(
+        model = LANGUAGE_MODEL,
+        messages=[
+            {'role': 'system', 'content': instruction_prompt},
+            {'role': 'user', 'content': input_query}
+        ],
+        stream=True
+    )
 
-print('chatbot responses: ')
-for chunk in stream:
-    print(chunk['message']['content'], end='', flush=True) #allowing us to see the chatbot response in real time
+    #print('chatbot responses: ')
+    for chunk in stream:
+        print(chunk['message']['content'], end='', flush=True) #allowing us to see the chatbot response in real time
 
 
 
