@@ -29,8 +29,12 @@ Severity: {info['severity']}
 
 Explain this to the driver in plain language, with suggested actions.
 """
-    response = ollama.chat(model="car-assistant", messages=[{"role": "user", "content": prompt}], options={"temperature":0.2, "num_predict":500})
-    return response['message']['content']
+    response = ollama.chat(model="car-assistant",
+                           messages=[{"role": "user", "content": prompt}],
+                           stream=True)
+
+    for info in response:
+        print(info['message']['content'], end='', flush=True)
 
 # Example usage
 if __name__ == "__main__":
@@ -38,5 +42,4 @@ if __name__ == "__main__":
         code = input("\nEnter OBD-II code (or 'exit' to quit): ").strip()
         if code.lower() == "exit":
             break
-        explanation = explain_obd_code(code)
-        print(f"\n{code} => {explanation}")
+        explain_obd_code(code)
