@@ -18,7 +18,7 @@ def explain_obd_code(code):
     if not info:
         return f"Sorry, I don't have information on code {code}."
 
-    # Build a structured prompt for the model
+    # structured prompt for the model
     prompt = f"""
 You are an automotive diagnostic assistant. 
 The vehicle has triggered OBD-II code {code}.
