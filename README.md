@@ -1,5 +1,5 @@
 # car-assistant-using--llama2
-
+# Topic: Hybrid LLM Framework for time series driven vehicle communication beyond voice assistants
 - made a car-assistant ageat using llama-2 that reads obd2 fault codes and gives us a non-technical and user friendly explanation. Retrieves info from a knowledge base in the form a json file with 100 fault codes for now
 - learnt rag (retrieval augmented generation) and seeing if it can be implemented into the program to increase search efficiency?
 - RAG will not increase efficiency since the queries we handle are only the fault codes. Not any user inputs which may be very unclear eg: "car is not starting"
