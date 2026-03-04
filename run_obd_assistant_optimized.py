@@ -1,5 +1,9 @@
 import json
 import ollama
+import os
+import time
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # Load the JSON knowledge base
 with open(r"D:\DevTools\Projects\LLMS\obd_codes.json", "r") as f:
@@ -31,7 +35,9 @@ Explain this to the driver in plain language, with suggested actions.
 """
     response = ollama.chat(model="car-assistant",
                            messages=[{"role": "user", "content": prompt}],
-                           stream=True)
+                           stream=True,
+                           options={"num_gpu":99, "num_ctx": 512},
+                           keep_alive="10m")
 
     for info in response:
         print(info['message']['content'], end='', flush=True)
