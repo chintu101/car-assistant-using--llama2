@@ -31,7 +31,7 @@ Description: {info['description']}
 Possible causes: {', '.join(info['causes'])}
 Severity: {info['severity']}
 
-Explain this to the driver in plain language, with suggested actions.
+Explain this to the driver in plain language, with suggested changes to their driving if needed.
 """
     response = ollama.chat(model="car-assistant",
                            messages=[{"role": "user", "content": prompt}],
